@@ -1,0 +1,33 @@
+{
+    "name": "fdt2k/backpack-devtools",
+    "type": "library",
+    "description": "Custom auth for backpack ",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien K",
+            "email": "fabien@karsegard.ch"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "KDA\\Backpack\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KDA\\Backpack\\DevtoolsServiceProvider"
+
+            ]
+        }
+    },
+  
+    "require": {
+        "laravel-shift/blueprint": "^2.1",
+        "afzalsabbir/generators": "*",
+        "fdt2k/laravel-package-service-provider": "dev-master || ^1.0"
+    }
+}
